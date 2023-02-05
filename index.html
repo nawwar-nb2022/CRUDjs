@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUDjs</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+    <header>
+            <h1>CRUDjs</h1>
+            <h2>Product management system</h2>
+    </header>
+    <main>
+        <section class="input-data">
+             <input type="text" id="title" class="title" placeholder="title">
+            <div class="price">
+                <input type="number" id="price" placeholder="price"
+                onkeyup="total()">
+                <input type="number" id="taxes" placeholder="taxes"
+                onkeyup="total()">
+                <input type="number" id="ads" placeholder="ads"
+                onkeyup="total()">
+                <input type="number" id="discount"class="discount" placeholder="discount"
+                onkeyup="total()">
+            </div>
+            <p id="totalprice" > 
+                total <span id="total"></span>
+            </p>
+            <div class="count-type">
+                <input type="number" id="count" placeholder="count">
+                <input type="text" id="Category" placeholder="Category">
+            </div>
+
+            <input type="submit" id="submit" class="submit" value="Create">
+        </section>
+
+        <section class="search-section">
+           <input type="text" id="search" class="search" placeholder="chose search type">
+           <div class="searchType">
+               <div class="search" id="searchTitle">search by title</div>
+               <div class="search" id="searchCat"> search by Category</div>
+           </div>
+        </section>
+
+        
+            <table>
+                <tr>
+                    <th>id</th>
+                    <th>title</th>
+                    <th>price</th>
+                    <th>taxes</th>
+                    <th>ads</th>
+                    <th>discount</th>
+                    <th>category</th>
+                    <th>total</th>
+                    <th >edit</th>
+                </tr>
+                <tbody id="tbody">
+                   
+                </tbody>
+            </table>
+        
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+body{
+    background-color: #222;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+header h1{
+    margin-bottom: 0;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+section.input-data{
+display: flex;
+flex-direction:column ;
+align-items: center;
+justify-content: center;
+gap: 20px;
+}
+input{
+    border-radius: 5px;
+    color: white;
+    background: #111;
+    outline: none;
+    border: none;
+    padding:10px ;
+    font-size: 15px;
+}
+input:focus{
+    background-color: black;
+    transform: scale(1.05);
+}
+.title{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+p{
+    background: red;
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+    margin-top: 0;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+.count-type{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    font-size:20px;
+}
+
+.submit{
+    background-color: rgb(76, 192, 192);
+    font-weight: bolder;
+    font-size: 20px;
+    width: 100%;
+    cursor: pointer;
+    letter-spacing: 2px;
+    opacity: .7;
+    transition: .5s all ease-in-out;
+}
+.submit:hover { 
+    opacity: 1;
+}
+
+.search-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+}
+.search{
+    width: 100%;
+}
+.searchType{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.searchType div{
+    min-width: 100%;
+    background: green;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+th{
+    text-transform: capitalize;
+}
+th,td{
+    padding: 10px;
+}
+table .edit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+table .edit button{
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+table .edit button.update{
+    background: rgb(17, 32, 82);
+}
+table .edit button.delete{
+    background: crimson;
+}
